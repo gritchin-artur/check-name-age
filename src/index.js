@@ -17,7 +17,7 @@ button.addEventListener('click', (event) => {
               ageDisplay.innerHTML = 
                   `<h1 class='show-age'>${namePerson} your age is ${age.age} years</h1>`
               Notify.success(`✅ ${namePerson} your age is ${age.age} years`);
-      observerv.observe(target)
+        observerv.observe(target)
     })
     .catch((error) => {
        }) 
