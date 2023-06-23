@@ -19,6 +19,6 @@ button.addEventListener('click', (event) => {
               Notify.success(`✅ ${namePerson} your age is ${age.age} years`);
       observerv.observe(target)
     })
-       .catch((error) => {
+    .catch((error) => {
        }) 
 })
