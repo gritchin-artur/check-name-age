@@ -10,8 +10,8 @@ let name = '';
 button.addEventListener('click', (event) => {
     event.preventDefault();
     name = input.value.trim().toLowerCase();
-
-      fetchNameAge(name)
+    if (input.value.length > 0) {
+         fetchNameAge(name)
           .then((age) => {
               let namePerson = age.name.charAt(0).toUpperCase() + age.name.slice(1);
               ageDisplay.innerHTML = 
@@ -20,5 +20,10 @@ button.addEventListener('click', (event) => {
         observerv.observe(target)
     })
     .catch((error) => {
-       }) 
+       })  
+    } else {
+  Notify.failure("Enter your name!")
+    }
+
+
 })
